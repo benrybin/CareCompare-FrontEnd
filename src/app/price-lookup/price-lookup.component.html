@@ -1,0 +1,17 @@
+<input #code placeholder="code">
+<input #zip  placeholder="zip">
+<button (click)=captureCode(code.value,zip.value) >Submit</button>
+<a *ngFor="let price of prices" >
+    <div class="card text-center"style="width: 40rem; margin:0 auto;">
+        <div class="card border-danger " style="max-width: 40rem;">
+      <div class="module blog">
+        
+        
+          <h5 class="card-title">{{price.hosp.namehosp}}</h5>
+          <h5 class="card-title">{{price.hosp.zip}}</h5>
+          <p class="card-text">${{price.price}}</p>
+          
+        </div>
+      </div>
+    </div>
+  
