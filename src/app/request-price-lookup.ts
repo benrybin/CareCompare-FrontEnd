@@ -1,4 +1,4 @@
 export class RequestPriceLookup {
 
-    procedurecode:String;
+    desc:String[];
 }

@@ -1,6 +1,14 @@
-<input #code placeholder="code">
+<!-- <input #code placeholder="code"> -->
+<input #descrip id="addcard" type="text" class="form-control"
+         [formControl]="queryField"
+         [ngbTypeahead]="search"
+         (keyup.enter)=captureCode(queryField.value,zip.value)/>
 <input #zip  placeholder="zip">
-<button (click)=captureCode(code.value,zip.value) >Submit</button>
+<button (click)=captureCode(descrip.value,zip.value) >Submit</button>
+<div class="input-group col-3">
+  
+
+</div>
 <a *ngFor="let price of prices" >
     <div class="card text-center"style="width: 40rem; margin:0 auto;">
         <div class="card border-danger " style="max-width: 40rem;">
