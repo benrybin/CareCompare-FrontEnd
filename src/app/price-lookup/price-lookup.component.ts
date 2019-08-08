@@ -17,7 +17,7 @@ import { DescripHolder } from '../descrip-holder';
 export class PriceLookupComponent implements OnInit {
 code:String;
 prices: PriceLookup[];
-zip:Number;
+zip:String;
 autofill: AutofillService;
 results: DescripHolder;
 queryField: FormControl = new FormControl();
@@ -41,9 +41,10 @@ queryField: FormControl = new FormControl();
   
 
 
-  captureCode(code:String,zip:Number){
+  captureCode(code:String,zip:String){
     this.code = code;
     this.zip = zip;
+    if(this.zip==""){this.zip="19711";}
     this.priceLookupService.getPrices(code,zip).subscribe(prices => 
       {this.prices=prices;
         

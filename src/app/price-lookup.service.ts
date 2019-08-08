@@ -12,7 +12,8 @@ export class PriceLookupService {
   
   constructor(private http:HttpClient) { }
 
-  public getPrices(code:String,zip:Number): Observable<PriceLookup[]>{
+  public getPrices(code:String,zip:String): Observable<PriceLookup[]>{
+    if(zip==""){zip="19711"};
     return this.http.get<PriceLookup[]>(this.url + "/pricerequest?code=" + code +"&zip=" + zip);
   }
   public getzipDistance(hospZip:String,enterZip:String){

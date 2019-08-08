@@ -9,10 +9,12 @@ import {FormsModule} from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import {AutofillService} from "src/app/autofill.service";
+import { NavbarComponent } from './navbar/navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PriceLookupComponent
+    PriceLookupComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
