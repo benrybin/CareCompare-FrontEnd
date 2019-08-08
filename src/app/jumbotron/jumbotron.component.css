@@ -1,0 +1,13 @@
+.jumbotron {
+    padding-top: 30%;
+    color: white;
+    z-index: 100;
+    background: url(https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80) no-repeat center center fixed; 
+    background-color: grey;
+    background-size: cover;
+    margin: 0
+    
+}
+.lead{
+    padding-left: 8rem
+}

@@ -1,0 +1,15 @@
+.inputs{
+    padding-top: 3rem;
+    /* margin-left: 25rem; */
+    margin:auto;
+    width: 30%;
+    text-align: center;
+    border: solid black 1px
+}
+.submit{
+    margin-left: 1rem;
+    margin-bottom: .5rem;
+}
+.zipinput{
+    margin-left:1rem;
+}

@@ -1,10 +1,13 @@
 <!-- <input #code placeholder="code"> -->
-<input #descrip id="addcard" type="text" class="form-control"
-         [formControl]="queryField"
-         [ngbTypeahead]="search"
-         (keyup.enter)=captureCode(queryField.value,zip.value)/>
-<input #zip  placeholder="zip">
-<button (click)=captureCode(descrip.value,zip.value) >Submit</button>
+<div class="inputs">
+  <input class="descripinput" #descrip id="addcard" type="text" placeholder="description"
+  [formControl]="queryField"
+  [ngbTypeahead]="search"
+  (keyup.enter)=captureCode(queryField.value,zip.value)/>
+  <input #zip class="zipinput"  placeholder="zip">
+
+<button class="submit btn btn-info"  (click)=captureCode(descrip.value,zip.value)>Submit</button>
+</div>
 <div class="input-group col-3">
   
 

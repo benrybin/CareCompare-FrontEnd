@@ -10,11 +10,13 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import {AutofillService} from "src/app/autofill.service";
 import { NavbarComponent } from './navbar/navbar.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
 @NgModule({
   declarations: [
     AppComponent,
     PriceLookupComponent,
-    NavbarComponent
+    NavbarComponent,
+    JumbotronComponent
   ],
   imports: [
     BrowserModule,
